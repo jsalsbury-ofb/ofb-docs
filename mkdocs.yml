@@ -63,36 +63,36 @@ markdown_extensions:
   - md_in_html
   # - toc:
   #     permalink: true
-  - pymdownx.arithmatex:
-      generic: true
-  - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.caret
+  # - pymdownx.arithmatex:
+  #     generic: true
+  # - pymdownx.betterem:
+  #     smart_enable: all
+  # - pymdownx.caret
   - pymdownx.details
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.keys
+  # - pymdownx.highlight:
+  #     anchor_linenums: true
+  #     line_spans: __span
+  #     pygments_lang_class: true
+  # - pymdownx.inlinehilite
+  # - pymdownx.keys
   # - pymdownx.magiclink:
   #     normalize_issue_symbols: true
   #     repo_url_shorthand: true
   #     user: squidfunk
   #     repo: mkdocs-material
-  - pymdownx.mark
-  - pymdownx.smartsymbols
+  # - pymdownx.mark
+  # - pymdownx.smartsymbols
   - pymdownx.snippets:
       auto_append:
         - includes/mkdocs.md
         - includes/abbreviations.md
   - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
-      combine_header_slug: true
-      slugify:
-        kwds:
-          case: lower
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.tilde
+  # - pymdownx.tabbed:
+  #     alternate_style: true
+  #     combine_header_slug: true
+  #     slugify:
+  #       kwds:
+  #         case: lower
+  # - pymdownx.tasklist:
+  #     custom_checkbox: true
+  # - pymdownx.tilde

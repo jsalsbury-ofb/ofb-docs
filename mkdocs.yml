@@ -68,7 +68,7 @@ markdown_extensions:
   # - pymdownx.betterem:
   #     smart_enable: all
   # - pymdownx.caret
-  # - pymdownx.details
+  - pymdownx.details
   # - pymdownx.highlight:
   #     anchor_linenums: true
   #     line_spans: __span
@@ -86,10 +86,7 @@ markdown_extensions:
   #     auto_append:
   #       - includes/mkdocs.md
   #       - includes/abbreviations.md
-  # # - pymdownx.superfences:
-  # #     custom_fences:
-  # #       - name: mermaid
-  # #         class: mermaid
+  - pymdownx.superfences
   # - pymdownx.tabbed:
   #     alternate_style: true
   #     combine_header_slug: true

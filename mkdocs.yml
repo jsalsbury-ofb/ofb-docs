@@ -61,27 +61,27 @@ markdown_extensions:
   - def_list
   - footnotes
   - md_in_html
-  # - toc:
-  #     permalink: true
-  # - pymdownx.arithmatex:
-  #     generic: true
-  # - pymdownx.betterem:
-  #     smart_enable: all
-  # - pymdownx.caret
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
   - pymdownx.details
-  # - pymdownx.highlight:
-  #     anchor_linenums: true
-  #     line_spans: __span
-  #     pygments_lang_class: true
-  # - pymdownx.inlinehilite
-  # - pymdownx.keys
-  # - pymdownx.magiclink:
-  #     normalize_issue_symbols: true
-  #     repo_url_shorthand: true
-  #     user: squidfunk
-  #     repo: mkdocs-material
-  # - pymdownx.mark
-  # - pymdownx.smartsymbols
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
   - pymdownx.snippets:
       auto_append:
         - includes/mkdocs.md
@@ -89,10 +89,10 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
-      # combine_header_slug: true
+      # combine_header_slug: true # These ones cause an error for some reason
       # slugify:
       #   kwds:
       #     case: lower
-  # - pymdownx.tasklist:
-  #     custom_checkbox: true
-  # - pymdownx.tilde
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde

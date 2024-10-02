@@ -46,6 +46,7 @@ nav:
     - Getting Started: lockbox/import.md
     - Gift Entry: lockbox/gift-entry.md
     - Commit and Audit: lockbox/commit.md
+    - Correspondence: lockbox/correspondence.md
   - In House:
     - in-house/index.md
     - Getting Started: in-house/setup.md

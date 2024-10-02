@@ -86,10 +86,10 @@ markdown_extensions:
       auto_append:
         - includes/mkdocs.md
         - includes/abbreviations.md
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
+  # - pymdownx.superfences:
+  #     custom_fences:
+  #       - name: mermaid
+  #         class: mermaid
   - pymdownx.tabbed:
       alternate_style: true
       combine_header_slug: true

@@ -185,7 +185,7 @@
 
 ??? warning "IFFD Gift Reference Naming Conventions"
 
-    The letter will put the IFFD name into this sentence: "*...through your participation in a food and funds drive sponsored by {name of IFFD}...*" **DO NOT** include "Fund Drive"  in the IFFD name such as Bards Turkey Dinner Fund Drive, rather, Bards Turkey Dinner, or Intel or US Bank etc. **If linked to a proposal, do not add proposal name in reference**.
+    The letter will put the IFFD name into this sentence: "*...through your participation in a food and funds drive sponsored by (name of IFFD)...*" **DO NOT** include "Fund Drive"  in the IFFD name such as Bards Turkey Dinner Fund Drive, rather, Bards Turkey Dinner, or Intel or US Bank etc. **If linked to a proposal, do not add proposal name in reference**.
 
 ### Box (West or 33rd)
 

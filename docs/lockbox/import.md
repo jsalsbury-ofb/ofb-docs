@@ -26,12 +26,12 @@ Identify the `Lockbox` file for import. This can be found at:
 
 Create or update the relevant `Raiser's Edge` defaults listed below with the **Lockbox Date**. Note, you can use the `F3` shortcut to populate a date field with the current date, if the current date matches the `Lockbox` date.
 
-1.  Individuals: **Initials - New Individual**
+1. Individuals: **Initials - New Individual**
     1. Address and Phones
         1. Date From: Lockbox Date
     2. Constituency Codes
         1. Date From: Lockbox Date
-2.  Organizations: **Initials - New Organization**
+2. Organizations: **Initials - New Organization**
     1. Address and Phones
         1. Date From: Lockbox Date
     2. Constituency Codes

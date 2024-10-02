@@ -30,3 +30,24 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to light mode
+# Page tree
+nav:
+  - Home: index.md
+  - Constituents: 
+    - constituents/index.md
+    - Defaults: constituents/defaults.md
+    - Receipts / Acknowledgements: constituents/receipts.md
+    - Deceased Constituents: constituents/deceased.md
+    - Honor / Memorial: constituents/honor.md
+    - Merges: constituents/merges.md
+  - Lockbox:
+    - lockbox/index.md
+    - Getting Started: lockbox/import.md
+    - Gift Entry: lockbox/gift-entry.md
+    - Commit and Audit: lockbox/commit.md
+  - In House:
+    - in-house/index.md
+    - Getting Started: in-house/setup.md
+    - Gift Entry: in-house/gift-entry.md
+    - Commit and Audit: in-house/commit.md
+  - Classy: classy/index.md

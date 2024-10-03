@@ -27,3 +27,21 @@ For context, it is necessary to update the expected amounts in batch because the
 1. Open the **Gift Batch Setup** menu.
 2. Update the `Projected Number of Gifts` field with the *Running Total*.
 3. Update the `Project Amount` field with the *Running Total* number of gifts.
+
+## Audit Process
+
+1. When you are ready, commit the batch.
+2. Navigate to your Raiser's Edge **Home** page where your favorite queries should be stored.
+3. Perform the standard batch audits and validation processes by using the **Address Accelerator** and the queries saved to your Home page.
+4. Move the Asana batch into **Receipting**.
+5. Select the *Summary for DGP* query and enter the batch number into the query wizard.
+6. Export the generated document to a PDF and then open it.
+    1. **Note:** As of the time of writing, it is better to open the PDF from your local File Select, instead of opening it when prompted by Raiser's Edge after exporting it.
+7. If it is not already open, open the gift packet for this batch as well.
+8. Insert the *Summary for DGP* document as the second page of the DGP packet, and then save the DGP packet.
+9. Rename the DGP packet to *Batch Date - DONE Initials Batch Number*.
+10. Move the DGP packet to:
+
+```text
+S:\FISCAL - Docs from Development\Digital Gift Packet\DoTS Final
+```

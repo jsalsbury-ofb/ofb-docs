@@ -20,7 +20,18 @@ For context, it is necessary to update the expected amounts in batch because the
 
 ??? warning "Tips on diagnosing mismatched projected amount and running totals"
 
-    Lorem ipsum
+    If, after accounting for fees and errors, there is still a mismatch between the projected amount in the DGP packet and the actual running total in RE, it is essential to know how to find the source of the discrepancy. Here is a list of common issues and the way to diagnose them:
+
+    - **Problem:** Incorrect gift amounts
+        - **Solution:** Verify that you entered all gift amounts correctly and that you did not, for instance, move a decimal place in one of the gifts.
+    - **Problem:** Missing Fees
+        - **Solution:** Ensure that you have captured and accounted for all 3PW fees. You can verify this by either examining the total 3PW gift amount vs. the check amount issued in the distribution, or by going into the distribution breakdown spreadsheet and looking for a `Fees` column.
+    - **Problem:** Missing gifts
+        - **Solution:** Export your batch to a grid and open in excel. First, process your data to recombine gifts that are a part of the same check. For example, you could *FILTER* by the `Check Number` column for unique values, and then perform a *SUMIF* to get the total of all gifts under that check number. Then, compare all the gift totals in batch to those listed on page 2 of the DGP packet. The easiest way to identify discrepancies could be to put the expected DGP gifts into the spreadsheet as well, sort both columns by amount, and then see whether the batch or the packet is missing gifts. *If the packet is missing gifts, see "DGP Packet Missing Gifts" below.*
+
+??? danger "DGP Packet Missing Gifts"
+
+    If the **DGP Packet** is missing gifts, it is important to notify DRC so they can correct the packet. The gift may have either been forgotten, or intentionally excluded from the packet, so they will need to update the packet accordingly before you can proceed with the batch.
 
 ### Update the Projected Gift Amount and Number of Gifts
 

@@ -52,7 +52,9 @@ nav:
     - Getting Started: in-house/setup.md
     - Gift Entry: in-house/gift-entry.md
     - Commit and Audit: in-house/commit.md
-  - Classy: classy/index.md
+  - Classy: 
+    - classy/index.md
+    - Getting Started: classy/getting-started.md
 
 # Extensions
 markdown_extensions:

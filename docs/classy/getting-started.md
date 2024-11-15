@@ -104,4 +104,68 @@ S:\Development\Applications\Classy\Gift Exports\Classy Gift Exports FYXX-XX\Curr
 
     To select the correct transaction date range, navigate to the Gift Exports folder listed above and find the most recent Classy export. Your **transaction start date** should be one day after the end date of the previous export. Your **transaction end date** should be at most the day before today's date. **However, there is no requirement for the how long a report has to be, but a report does need to be at least two days long (such as 10/01/24 - 10/02/24).** During a busy giving season, it is advantageous to use smaller date ranges to avoid fatigue during the gift entry process for Classy batches.
 
-#### Preparing the Data
+#### Run the One-Time Gift Macro
+
+Once you have correctly exported the Classy report and saved it into the correct location, you must modify the data to fit the Raiser's Edge import structure and format. This can be done via the following process:
+
+1. Open the Classy report CSV file.
+2. Run the macro for one-time Classy reports. The current correct macro file is `Arrange_1time_NewClassy_V8.bas` at the time of writing. See the admonition "How to access the Classy One-time Macro" if this is your first time. **Note:** running the macro will create a new file in the same folder with the processed data with *"for review"* after the title.
+
+??? "How to access the Classy One-time Macro"
+
+    The macro files for all Classy report types are located at:
+
+    ```text
+    S:\Development\Applications\Raiser's Edge\RE Plugins\Macro Files
+    ```
+
+    Here, you can find the `Arrange_1time_NewClassy_V8.bas` file, which is the current correct file for one-time Classy reports. 
+
+??? "How to use the Classy macro?"
+
+    Once you know where the Classy macro is and which file to use, navigate to the Classy report CSV file you want to use it on and open it. Then, you can use the `Alt + F11` shortcut to open the developer window. In the developer window, go to `File > Import` and import the correct classy macro file that you want to use. Finally, close the developer window and then on Excel, navigate to the Macros menu. The Classy macro you selected should be in the Macros menu, and you can now select and run it.
+
+??? "Color code guide on Classy for review file"
+
+    | Color         | Meaning |
+    | ------------- | ------- |
+    | Gray          | The import will ignore this field. The data is still useful, so do not delete it. |
+    | Pink          | Discrepancy between Classy profile name and billing name. The difference can be innocuous, such as capitalization, or it can indicate data you should add to the RE profile, such as a partner or middle name. |
+    | Bright Green  | A different appeal from the GEN donation page that most gifts come through. |
+    | Light Green   | Indicates presence of a second address line, usually an apartment number. |
+    | Purple        | Indicates the appeals being duplicated into the reference field. This comes from Classy Campaign Name and Source Codes. |
+
+#### Pre-process The Data
+
+After running the macro, make some changes to the data before importing it into Raiser's Edge. You can delete unnecessary purple text in the Gift Reference field and modify bright green appeals as needed according to the table below:
+
+| Classy Appeal ID                      | Change Appeal ID To   | Add Package       | Gift Reference                            | Account Involvement   | Other Notes                                           |
+| ------------------------------------- | --------------------- | ----------------- | ----------------------------------------- | --------------------- | ----------------------------------------------------- |
+| (Appeal Name) *Vanity*                | (Appeal Name)         | (Look up in RE)   | `Delete`                                  | `N/A`                 | Testing round starts with Sum1a / Sum1b 2018          |
+| (Appeal Name MMYY) (Misc. Letters)    | (Appeal Name)         | (Misc. Letters)   | `Delete`                                  | `N/A`                 | Package ID will be a consistent 5 codes soon          |
+| ADVOCACY                              | GEN                   | `N/A`             | `Delete`                                  | `N/A`                 | Change FUND to ADVOCACY                               |
+| CAN 20XX                              | CAN 20XX              | `N/A`             | (Team Page / Name)                        | `N/A`                 |                                                       |
+| E-NEWS                                | E-NEWS                | `N/A`             | `Delete`                                  | `N/A`                 |                                                       |
+| ENGAGE                                | ENGAGE                | `N/A`             | Hunger Action Month or Vote Out Hunger    | `N/A`                 | HAM only in September                                 |
+| NALC 20XX                             | NALC 20XX             | D                 | `Delete`                                  | `N/A`                 | Look out for gifts needing PTR (Var)                  |
+| OLAH 20XX                             | OLAH 20XX             | TEAM or IND       | (Team Name)                               | `N/A`                 |                                                       |
+| P2P                                   | P2P                   | `N/A`             | (Team Name)                               | (Team)                | Look in columns *BN* - *BT* to find IFFD team names   |
+| PREPARE                               | GEN                   | `N/A`             | *OFB's Local Wildfire Response*           |                       | Change FUND to PREPARE                                |
+
+#### Save Import File
+
+Once you're done reviewing the data:
+
+1. **Save as CSV (Comma delimited)** and change the file name from "for review" to "for import."
+2. Close the CSV file.
+
+#### Import the Data to Raiser's Edge
+
+1. Open Raiser's Edge `ImportOmatic`.
+2. Update your Raiser's Edge IND and ORG defaults to the start date of the Classy export date.
+3. Select the v8 Classy import profile.
+4. Select the "for import" CSV as the file to import.
+
+!!! danger "DO NOT use 'update' or 'add new address'"
+
+    Do not use the "Update" or "Add New Address" buttons during the import process. They do not copy forward the address or include our address defaults. It will also cause that gift to be sent to exceptions.
